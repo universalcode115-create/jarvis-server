@@ -51,5 +51,11 @@ async function askAI(message, history = []) {
 }
 
 module.exports = {
-    askAI
+    askAIconst oldReply = cache.get(message);
+
+if (oldReply) {
+    cache.set(message, reply);
+    return oldReply;
+
+                                         }
 };

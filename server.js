@@ -87,12 +87,12 @@ const PORT=process.env.PORT||3000;
 
 app.listen(PORT,()=>{
 
-console.log("================================");
+logger.info("================================");
 
-console.log("Jarvis Server Started");
+logger.info("Jarvis Server Started");
 
-console.log("Port :",PORT);
+logger.info("Port : "+PORT);
 
-console.log("================================");
+logger.info("================================");
 
 });

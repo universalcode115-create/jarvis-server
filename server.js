@@ -1,3 +1,4 @@
+const limiter = require("./middleware/rateLimiter");
 const logger = require("./core/logger");
 require("dotenv").config();
 
@@ -21,7 +22,7 @@ app.use(helmet({
 app.use(express.json({
     limit:"20mb"
 }));
-
+app.use(limiter);
 app.use(express.urlencoded({
     extended:true
 }));

@@ -1,3 +1,4 @@
+const logger = require("./logger");
 const cache = require("./cache");
 const health=require("./health");
 const gemini = require("../providers/gemini");

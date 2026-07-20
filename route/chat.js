@@ -1,3 +1,12 @@
+const express = require("express");
+
+const router = express.Router();
+
+const ai = require("../core/router");
+
+const memory = require("../core/memory");
+
+const logger = require("../core/logger");
 const express=require("express");
 
 const router=express.Router();

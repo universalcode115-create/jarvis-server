@@ -1,3 +1,4 @@
+const auth = require("./middleware/auth");
 const limiter = require("./middleware/rateLimiter");
 const logger = require("./core/logger");
 require("dotenv").config();
